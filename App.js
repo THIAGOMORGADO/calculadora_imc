@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Text, TouchableOpacity, StatusBar, StyleSheet } from 'react-native';
+
 
 export default function App() {
-  return (
+  return(
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.header}>
+        <Text style={styles.logo}>Calculadora de Imc</Text>
+      </View>
+
+      <View style={styles.main}>
+
+      </View>
+
     </View>
   );
 }
@@ -13,8 +20,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#7159c1',
   },
+  header: {
+    alignItems: 'center',
+    justifyContent:'center',
+    backgroundColor: '#7158',
+    height: 90
+  },
+  logo:{
+    marginTop: 50,
+    alignItems: 'center',
+    justifyContent:'center',
+    fontWeight: 'bold',
+    fontSize: 22,
+    color: '#fff'
+  }
 });
